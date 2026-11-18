@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import datasetRoutes from "./routes/dataset.routes.js";
 
 const app = express();
 
@@ -16,5 +17,7 @@ app.get("/api/health", (req, res) => {
     message: "DataScope API is healthy",
   });
 });
+
+app.use("/api/datasets", datasetRoutes);
 
 export default app;
