@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test:db": "tsx src/db/test.ts",
-   "db:generate": "drizzle-kit generate",
-  "db:migrate": "drizzle-kit migrate"
-},
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test:db": "tsx src/db/test.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
